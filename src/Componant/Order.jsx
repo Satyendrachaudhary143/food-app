@@ -24,7 +24,7 @@ function Order() {
                             <p>Your order has been sucessfully placed</p>
 
                         </div>
-                        <button className="bg-blue-600 font-bold mt-5 p-3 text-center rounded-2xl hover:bg-blue-800" onClick={() => nevigater("/")}>Goto Home</button>
+                            <button className="bg-green-500 font-bold mt-5 px-3 py-2 text-center rounded-3xl hover:bg-green-600" onClick={() => nevigater("/")}> Home</button>
                     </>
                 )}
             </div>

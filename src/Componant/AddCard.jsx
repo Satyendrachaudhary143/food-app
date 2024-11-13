@@ -41,7 +41,7 @@ const AddCard = ({ tongle }) => {
 
 
             <div className="absolute bottom-0 left-0 mb-5 ml-2">
-                <h3 className="text-gray-800 font-semibold">items:{totalqty}</h3>
+                <h3 className="text-gray-800 font-semibold">Items: {totalqty}</h3>
                 <h3 className="text-gray-800 font-semibold">Total Amount: {totalAmt}</h3>
                 <div className=" abc sm:w-[280px] ">
 
