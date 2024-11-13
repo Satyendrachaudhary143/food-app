@@ -6,7 +6,7 @@ import App from './App.jsx'
 import './index.css'
 import { Provider } from "react-redux";
 import Store from './store/Store.js'
-import Order from './Componant/order.jsx'
+import Order from './Componant/Order.jsx'
 
 const router = createBrowserRouter([{
   path: "/", element: <App />
