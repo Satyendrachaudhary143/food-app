@@ -6,7 +6,7 @@ import { addToCart } from "../store/slice/CardSlice"
 const Foodcard = ({ food, toast }) => {
     const dispatch = useDispatch();
     return (
-        <div className="font-bold w-[250px] bg-white p-5 flex flex-col rounded-lg">
+        <div className="font-bold w-[270px] bg-white p-5 flex flex-col rounded-lg sm:w-[250px]">
             <img src={food.img} className="w-auto h-[250px] hover:scale-110 cursor-grab transition-all duration-500" />
             <div className="text-sm flex justify-between my-3">
                 <h2>{food.name}</h2>

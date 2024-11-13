@@ -42,7 +42,10 @@ const AddCard = ({ tongle }) => {
             <div className="absolute bottom-0 left-0 mb-5 ml-2">
                 <h3 className="text-gray-800 font-semibold">items:{totalqty}</h3>
                 <h3 className="text-gray-800 font-semibold">Total Amount: {totalAmt}</h3>
-                <button className={`bg-green-500 hover:bg-green-700  rounded-md p-1 w-[35vh] text-white font-semibold mt-3 ${totalqty == 0 && "cursor-not-allowed"} `} onClick={() => nevigate("/order")} disabled={dis}>Checkout</button>
+                <div className="flex justify-center w-[310px] sm:w-[280px]">
+
+                    <button className={`bg-green-500 hover:bg-green-700  rounded-md p-1 w-[35vh] text-white font-semibold mt-3  ${totalqty == 0 && "cursor-not-allowed"} `} onClick={() => nevigate("/order")} disabled={dis}>Checkout</button>
+                </div>
             </div>
         </div>
     );
