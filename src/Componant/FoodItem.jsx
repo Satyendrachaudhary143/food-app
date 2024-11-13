@@ -10,7 +10,7 @@ function FoodItem() {
     return (
         <>
             <Toaster />
-            <div className="flex flex-wrap gap-14 pl-2 justify-center sm:justify-start ">
+            <div className="flex flex-wrap gap-14 sm:pl-2 justify-center sm:justify-start ">
                 {FoodData.filter((food) => {
                     if (category === "ALL") {
                         return food.name.toLowerCase().includes(search.toLowerCase());

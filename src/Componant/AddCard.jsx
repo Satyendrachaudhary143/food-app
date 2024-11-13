@@ -3,6 +3,7 @@ import ItemCard from "./ItemCard";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import "../index.css"
 
 
 
@@ -25,7 +26,7 @@ const AddCard = ({ tongle }) => {
     }, [totalqty]);
 
     return (
-        <div className="fixed top-0 right-0 lg:w-[40vh] bg-white h-full  w-full p-5">
+        <div className="fixed top-0 right-0 sm:w-[40vh] bg-white h-full  w-full p-5">
             <div className="flex justify-between items-center">
                 <span className="text-xl font-bold">
                     My Order
@@ -42,9 +43,10 @@ const AddCard = ({ tongle }) => {
             <div className="absolute bottom-0 left-0 mb-5 ml-2">
                 <h3 className="text-gray-800 font-semibold">items:{totalqty}</h3>
                 <h3 className="text-gray-800 font-semibold">Total Amount: {totalAmt}</h3>
-                <div className="flex justify-center w-[310px] sm:w-[280px]">
+                <div className=" abc sm:w-[280px] ">
 
-                    <button className={`bg-green-500 hover:bg-green-700  rounded-md p-1 w-[35vh] text-white font-semibold mt-3  ${totalqty == 0 && "cursor-not-allowed"} `} onClick={() => nevigate("/order")} disabled={dis}>Checkout</button>
+                    <button className={`bg-green-500 hover:bg-green-700  rounded-md p-1 w-[25vh] text-white font-semibold mt-3 sm:w-[37vh] ${totalqty == 0 && "cursor-not-allowed"} `} onClick={() => nevigate("/order")} disabled={dis}>Checkout</button>
+
                 </div>
             </div>
         </div>
